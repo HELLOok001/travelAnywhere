@@ -1,20 +1,24 @@
 <template>
   <div class="hello">
+    <travelHeader></travelHeader>
     {{ msg }}
   </div>
 </template>
 
 <script>
+import travelHeader from "./Header";
 export default {
-  name: "HelloWorld",
+  name: "Home",
   data() {
     return {
       msg: "这里要开始测试项目了",
     };
   },
+  components: {
+    travelHeader,
+  },
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 </style>
